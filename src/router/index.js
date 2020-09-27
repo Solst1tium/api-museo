@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Depto1 from '../views/Depto1.vue'
+import Depto from '../views/Depto.vue'
+
 
 Vue.use(VueRouter)
 
@@ -12,9 +13,9 @@ const routes = [
     component: Home
   },
   {
-    path: '/depto1',
-    name: 'Depto1',
-    component: Depto1
+    path: '/depto/:id',
+    name: 'Depto',
+    component: Depto,
   },
   {
     path: '/search',
